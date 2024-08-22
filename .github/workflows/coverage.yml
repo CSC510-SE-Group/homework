@@ -1,5 +1,6 @@
               
 name: Coverage
+uses: coverallsapp/github-action@v2.3.0
 
 on:
   push:
@@ -17,7 +18,7 @@ jobs:
         python-version: ["3.12"]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: coverallsapp/github-action@v2.3.0
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
@@ -29,3 +30,5 @@ jobs:
     - name: Generate coverage with coveralls
       run: |
         coverage run -m pytest tests/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

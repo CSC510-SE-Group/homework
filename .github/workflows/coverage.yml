@@ -29,5 +29,6 @@ jobs:
     - name: Generate coverage with coveralls
       run: |
         coverage run -m pytest tests/*
+        coveralls
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

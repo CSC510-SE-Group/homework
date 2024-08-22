@@ -1,6 +1,5 @@
               
 name: Coverage
-uses: coverallsapp/github-action@v2.3.0
 
 on:
   push:

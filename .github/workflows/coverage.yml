@@ -30,6 +30,6 @@ jobs:
         coverage run -m pytest tests/*
         coverage report -m
     - name: Save in coveralls
-      run: coveralls --service=github-actions
+      run: coveralls
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}

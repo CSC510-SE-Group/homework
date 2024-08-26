@@ -17,6 +17,7 @@ jobs:
         python-version: ["3.12"]
 
     steps:
+    - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
@@ -25,11 +26,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install pytest coveralls
-    - name: Generate coverage with coveralls
+    - name: Generate coverage with coveralls and save
       run: |
         coverage run -m pytest tests/*
         coverage report -m
-    - name: Save in coveralls
-      run: coveralls
+        coveralls
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}

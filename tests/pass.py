@@ -1,5 +1,5 @@
-from src.myfile import func
+from src.myfile import isprime
 
 def test_answer():
-    assert func(3) == 4
+    assert isprime(4) == False
     

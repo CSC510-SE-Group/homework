@@ -9,3 +9,5 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </a>
 </p>
+
+This is the repository for CSC510 - Software Engineering's Homework - 1. More details [here](https://txt.github.io/se24fall/hw1.html)

@@ -3,8 +3,8 @@ name: Coverage
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
+    paths:
+      - 'HW1/**'
     branches: [ "main" ]
 
 jobs:

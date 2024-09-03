@@ -13,4 +13,3 @@ def isprime(n):
             return False
         r += 2
     return True
-# print(isprime(78), isprime(79))

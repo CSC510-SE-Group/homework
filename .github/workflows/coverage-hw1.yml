@@ -28,7 +28,7 @@ jobs:
         python -m pip install pytest coveralls
     - name: Generate coverage with coveralls and save
       run: |
-        coverage run -m pytest tests/*
+        coverage run -m pytest HW1/tests/*
         coverage report -m
         coveralls
       env:

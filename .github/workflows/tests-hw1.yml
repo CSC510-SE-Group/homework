@@ -27,4 +27,4 @@ jobs:
         python -m pip install pytest
     - name: Test with pytest
       run: |
-        pytest tests/*
+        pytest HW1/tests/*

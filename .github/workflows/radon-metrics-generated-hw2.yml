@@ -37,4 +37,5 @@ jobs:
         git config --local user.email 'shambu2k@users.noreply.github.com'
         git add HW2/post_traces/radon_metrics.txt
         git commit -m "Update radon_metrics.txt" || echo "No changes to commit"
+        git pull --rebase
         git push

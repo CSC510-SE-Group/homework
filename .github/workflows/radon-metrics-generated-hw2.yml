@@ -1,5 +1,6 @@
 name: HW2 - Radon Code Metrics
-
+permissions:
+  contents: write
 on:
   push:
     paths:

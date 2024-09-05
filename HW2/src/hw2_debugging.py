@@ -14,7 +14,7 @@ def recombine(leftArr, rightArr):
 
     # Both left and right are not empty
     while leftIndex < len(leftArr) and rightIndex < len(rightArr):
-        
+
         # Put left array in mergeArr because its smaller.
         if leftArr[leftIndex] < rightArr[rightIndex]:
             mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
@@ -26,7 +26,6 @@ def recombine(leftArr, rightArr):
     # If left is empty, add right array to mergeArr
     for i in range(rightIndex, len(rightArr)):
         mergeArr[leftIndex + i] = rightArr[i]
-        
 
     # If right is empty, add left array to mergeArr
     for i in range(leftIndex, len(leftArr)):

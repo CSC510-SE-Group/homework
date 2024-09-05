@@ -1,9 +1,9 @@
 -----Cyclomatic Complexity-----\n
 HW2/src/hw2_debugging.py
-    F 12:0 recombine - B
+    F 13:0 recombine - B
     F 4:0 mergeSort - A
 HW2/src/rand.py
-    F 3:0 random_array - A
+    F 4:0 random_array - A
 
 -----Maintainability Index-----\n
 HW2/src/hw2_debugging.py - A
@@ -11,25 +11,25 @@ HW2/src/rand.py - A
 
 -----Raw Metrics-----\n
 HW2/src/hw2_debugging.py
-    LOC: 36
+    LOC: 37
     LLOC: 26
     SLOC: 25
     Comments: 0
     Single comments: 0
     Multi: 0
-    Blank: 11
+    Blank: 12
     - Comment Stats
         (C % L): 0%
         (C % S): 0%
         (C + M % L): 0%
 HW2/src/rand.py
-    LOC: 8
+    LOC: 10
     LLOC: 7
-    SLOC: 7
+    SLOC: 8
     Comments: 0
     Single comments: 0
     Multi: 0
-    Blank: 1
+    Blank: 2
     - Comment Stats
         (C % L): 0%
         (C % S): 0%

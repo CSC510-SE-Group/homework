@@ -4,7 +4,7 @@ permissions:
 on:
   push:
     paths:
-      - 'HW2/src/**'
+      - 'HW2/**'
     branches: [ "main" ]
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade autopep8
     - name: Generate trace with autopep8
       run: |
-        (echo "test"; radon hal ./HW2/src;) >> ./HW2/post_traces/autopep8_trace.txt
+        (echo "test"; autopep8 --in-place --aggressive --aggressive --verbose --recursive ./HW2;) >> ./HW2/post_traces/autopep8_trace.txt
     - name: Commit and Push changes
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

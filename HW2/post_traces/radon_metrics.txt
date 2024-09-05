@@ -11,17 +11,17 @@ HW2/src/rand.py - A
 
 -----Raw Metrics-----\n
 HW2/src/hw2_debugging.py
-    LOC: 37
-    LLOC: 26
-    SLOC: 25
-    Comments: 0
-    Single comments: 0
+    LOC: 38
+    LLOC: 23
+    SLOC: 22
+    Comments: 4
+    Single comments: 4
     Multi: 0
     Blank: 12
     - Comment Stats
-        (C % L): 0%
-        (C % S): 0%
-        (C + M % L): 0%
+        (C % L): 11%
+        (C % S): 18%
+        (C + M % L): 11%
 HW2/src/rand.py
     LOC: 10
     LLOC: 7
@@ -38,17 +38,17 @@ HW2/src/rand.py
 -----Halstead Metrics-----\n
 HW2/src/hw2_debugging.py:
     h1: 6
-    h2: 19
-    N1: 15
-    N2: 30
-    vocabulary: 25
-    length: 45
-    calculated_length: 96.22039775975506
-    volume: 208.9735285398626
-    difficulty: 4.7368421052631575
-    effort: 989.8746088730333
-    time: 54.99303382627963
-    bugs: 0.06965784284662087
+    h2: 18
+    N1: 14
+    N2: 28
+    vocabulary: 24
+    length: 42
+    calculated_length: 90.56842503028855
+    volume: 192.56842503028858
+    difficulty: 4.666666666666667
+    effort: 898.6526501413467
+    time: 49.92514723007482
+    bugs: 0.0641894750100962
 HW2/src/rand.py:
     h1: 0
     h2: 0

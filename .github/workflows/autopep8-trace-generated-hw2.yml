@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade autopep8
     - name: Generate trace with autopep8
       run: |
-        (echo "test"; autopep8 --in-place --aggressive --aggressive --verbose --recursive ./HW2;) >> ./HW2/post_traces/autopep8_trace.txt
+        date >> ./HW2/post_traces/autopep8_trace.txt 2>&1 && autopep8 --in-place --aggressive --aggressive --verbose --recursive ./HW2  >> ./HW2/post_traces/autopep8_trace.txt 2>&1 && echo "" >> ./HW2/post_traces/autopep8_trace.txt 2>&1
     - name: Commit and Push changes
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

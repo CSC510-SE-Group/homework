@@ -1,8 +1,16 @@
-[file:HW2/src/hw2_debugging.py]
---->  1 issue(s) to fix {'E302': {12}}
+Thu Sep  5 17:58:03 UTC 2024
+[file:./HW2/src/hw2_debugging.py]
 --->  0 issue(s) to fix {}
-[file:HW2/src/rand.py]
---->  2 issue(s) to fix {'E302': {3}, 'E501': {6}}
+[file:./HW2/src/rand.py]
 --->  0 issue(s) to fix {}
-[file:HW2/tests/pass.py]
+[file:./HW2/tests/pass.py]
 --->  0 issue(s) to fix {}
+
+Thu Sep  5 17:58:12 UTC 2024
+[file:./HW2/src/hw2_debugging.py]
+--->  0 issue(s) to fix {}
+[file:./HW2/src/rand.py]
+--->  0 issue(s) to fix {}
+[file:./HW2/tests/pass.py]
+--->  0 issue(s) to fix {}
+

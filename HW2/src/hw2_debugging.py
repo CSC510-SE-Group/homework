@@ -14,24 +14,25 @@ def recombine(leftArr, rightArr):
     leftIndex = 0
     rightIndex = 0
     mergeArr = [None] * (len(leftArr) + len(rightArr))
+
+    # Both left and right are not empty
     while leftIndex < len(leftArr) and rightIndex < len(rightArr):
+        
+        # Put left array in mergeArr because its smaller.
         if leftArr[leftIndex] < rightArr[rightIndex]:
-            rightIndex += 1
             mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
-        else:
             leftIndex += 1
+        else:
             mergeArr[leftIndex + rightIndex] = rightArr[rightIndex]
+            rightIndex += 1
 
+    # If left is empty, add right array to mergeArr
     for i in range(rightIndex, len(rightArr)):
-        mergeArr[leftIndex + rightIndex] = rightArr[i]
+        mergeArr[leftIndex + i] = rightArr[i]
+        
 
+    # If right is empty, add left array to mergeArr
     for i in range(leftIndex, len(leftArr)):
-        mergeArr[leftIndex + rightIndex] = leftArr[i]
+        mergeArr[i + rightIndex] = leftArr[i]
 
     return mergeArr
-
-
-arr = rand.random_array([None] * 20)
-arr_out = mergeSort(arr)
-
-print(arr_out)

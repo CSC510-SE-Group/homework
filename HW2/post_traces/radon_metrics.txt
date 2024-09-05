@@ -1,0 +1,64 @@
+-----Cyclomatic Complexity-----\n
+HW2/src/hw2_debugging.py
+    F 12:0 recombine - B
+    F 4:0 mergeSort - A
+HW2/src/rand.py
+    F 3:0 random_array - A
+
+-----Maintainability Index-----\n
+HW2/src/hw2_debugging.py - A
+HW2/src/rand.py - A
+
+-----Raw Metrics-----\n
+HW2/src/hw2_debugging.py
+    LOC: 36
+    LLOC: 26
+    SLOC: 25
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+HW2/src/rand.py
+    LOC: 8
+    LLOC: 7
+    SLOC: 7
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 1
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+
+-----Halstead Metrics-----\n
+HW2/src/hw2_debugging.py:
+    h1: 6
+    h2: 19
+    N1: 15
+    N2: 30
+    vocabulary: 25
+    length: 45
+    calculated_length: 96.22039775975506
+    volume: 208.9735285398626
+    difficulty: 4.7368421052631575
+    effort: 989.8746088730333
+    time: 54.99303382627963
+    bugs: 0.06965784284662087
+HW2/src/rand.py:
+    h1: 0
+    h2: 0
+    N1: 0
+    N2: 0
+    vocabulary: 0
+    length: 0
+    calculated_length: 0
+    volume: 0
+    difficulty: 0
+    effort: 0
+    time: 0.0
+    bugs: 0.0

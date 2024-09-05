@@ -1,4 +1,4 @@
-name: Tests
+name: HW1 - Tests
 
 on:
   push:

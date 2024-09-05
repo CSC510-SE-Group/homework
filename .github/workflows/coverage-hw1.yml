@@ -1,5 +1,5 @@
               
-name: Coverage
+name: HW1 - Coverage
 
 on:
   push:

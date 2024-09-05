@@ -1,4 +1,4 @@
-name: Radon Code Metrics
+name: HW2 - Radon Code Metrics
 
 on:
   push:

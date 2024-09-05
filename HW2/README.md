@@ -7,4 +7,4 @@
 <a href="https://github.com/CSC510-SE-Group/homework/blob/main/HW2/post_traces/radon_metrics.txt"><img src='https://github.com/CSC510-SE-Group/homework/actions/workflows/radon-metrics-generated-hw2.yml/badge.svg' alt='Radon' /></a>
 </p>
 
-This is the repository for CSC510 - Software Engineering Homework2. More details [here](https://txt.github.io/se24fall/hw1.html)
+This is the repository for CSC510 - Software Engineering Homework2. More details [here](https://txt.github.io/se24fall/debug.html)

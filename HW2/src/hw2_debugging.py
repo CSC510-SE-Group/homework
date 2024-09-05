@@ -9,6 +9,7 @@ def mergeSort(arr):
 
     return recombine(mergeSort(arr[:half]), mergeSort(arr[half:]))
 
+
 def recombine(leftArr, rightArr):
     leftIndex = 0
     rightIndex = 0

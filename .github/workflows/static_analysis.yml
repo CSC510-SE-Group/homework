@@ -32,6 +32,9 @@ jobs:
     - name: Generate metrics with radon
       run: |
         (echo "-----Cyclomatic Complexity-----\n"; radon cc ./HW2/src; echo ""; echo "-----Maintainability Index-----\n"; radon mi ./HW2/src; echo ""; echo "-----Raw Metrics-----\n"; radon raw ./HW2/src; echo ""; echo "-----Halstead Metrics-----\n"; radon hal ./HW2/src;) &> ./HW2/post_traces/radon_metrics.txt  
+    - name: Generate trace with pyflakes
+      run: |
+        (pyflakes HW2/src/* && echo "No errors found by pyflake") &> HW2/post_traces/pyflakes.txt  
     - name: Commit and Push changes
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -39,5 +42,5 @@ jobs:
         git config --local user.name 'katydu'
         git config --local user.email 'katydu@users.noreply.github.com'
         git add .
-        git commit -m "Update autopep8_trace.txt and radon_metrics.txt" || echo "No changes to commit"
+        git commit -m "Update autopep8_trace.txt and radon_metrics.txt and pyflakes.txt" || echo "No changes to commit"
         git push

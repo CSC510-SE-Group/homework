@@ -5,8 +5,8 @@
 <a href="https://opensource.org/licenses/MIT" target="_blank">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </a>
-<a href='https://github.com/CSC510-SE-Group/homework/tree/main/HW1'> HW 1</a>
 
+<a href='https://github.com/CSC510-SE-Group/homework/tree/main/HW1'> HW 1</a>
 <a href='https://github.com/CSC510-SE-Group/homework/tree/main/HW2'> HW 2</a>
 
 ## Install dependencies required for all Homeworks

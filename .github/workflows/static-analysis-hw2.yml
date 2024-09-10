@@ -1,4 +1,4 @@
-name: HW2 - autopep8 Format
+name: Radon Static Analysis
 permissions:
   contents: write
 on:

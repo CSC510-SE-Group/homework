@@ -32,3 +32,4 @@ def recombine(leftArr, rightArr):
         mergeArr[i + rightIndex] = leftArr[i]
 
     return mergeArr
+

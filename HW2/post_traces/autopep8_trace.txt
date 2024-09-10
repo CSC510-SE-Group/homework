@@ -138,3 +138,15 @@ Sun Sep  8 20:44:27 UTC 2024
 --->  1 issue(s) to fix {'W391': {11}}
 --->  0 issue(s) to fix {}
 
+Tue Sep 10 17:59:06 UTC 2024
+[file:./HW2/tests/merge-testcases.py]
+--->  2 issue(s) to fix {'E302': {15}, 'W291': {16}}
+--->  0 issue(s) to fix {}
+[file:./HW2/tests/__init__.py]
+--->  0 issue(s) to fix {}
+[file:./HW2/src/hw2_debugging.py]
+--->  1 issue(s) to fix {'W391': {35}}
+--->  0 issue(s) to fix {}
+[file:./HW2/src/rand.py]
+--->  0 issue(s) to fix {}
+

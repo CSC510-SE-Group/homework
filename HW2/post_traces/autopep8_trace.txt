@@ -150,3 +150,14 @@ Tue Sep 10 17:59:06 UTC 2024
 [file:./HW2/src/rand.py]
 --->  0 issue(s) to fix {}
 
+Fri Sep 27 04:06:20 UTC 2024
+[file:./HW2/src/rand.py]
+--->  0 issue(s) to fix {}
+[file:./HW2/src/hw2_debugging.py]
+--->  1 issue(s) to fix {'W292': {34}}
+--->  0 issue(s) to fix {}
+[file:./HW2/tests/merge-testcases.py]
+--->  0 issue(s) to fix {}
+[file:./HW2/tests/__init__.py]
+--->  0 issue(s) to fix {}
+

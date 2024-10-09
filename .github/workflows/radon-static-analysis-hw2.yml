@@ -1,0 +1,41 @@
+name: Radon Static Analysis HW2
+permissions:
+  contents: write
+on:
+  push:
+    paths:
+      - 'HW2/**'
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.13.0-rc.1"]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install --upgrade radon
+    - name: Generate metrics with radon
+      run: |
+        (echo "-----Cyclomatic Complexity-----\n"; radon cc ./HW2/src; echo ""; echo "-----Maintainability Index-----\n"; radon mi ./HW2/src; echo ""; echo "-----Raw Metrics-----\n"; radon raw ./HW2/src; echo ""; echo "-----Halstead Metrics-----\n"; radon hal ./HW2/src;) &> ./HW2/post_traces/radon_metrics.txt  
+    - name: Commit and Push changes
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.name 'shambu2k'
+        git config --local user.email 'shambu2k@users.noreply.github.com'
+        git pull
+        git add .
+        git commit -m "Update radon_metrics.txt" || echo "No changes to commit"
+        git push

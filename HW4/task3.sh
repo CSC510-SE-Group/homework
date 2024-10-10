@@ -15,6 +15,7 @@ NR > 1 {
         count++;         
     } 
 } 
+# calculate the average age
 END {
     if (count > 0) {
         avg_age = total_age / count;  
@@ -22,4 +23,4 @@ END {
     } else {
         print "No filtered passengers found.";
     }
-}' titanic.csv 
+}' titanic.csv

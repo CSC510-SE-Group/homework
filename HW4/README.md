@@ -10,4 +10,4 @@
 </a>
 </p>
 
-This is the repository for CSC510 - Software Engineering's Homeworks. More details [here](https://txt.github.io/se24fall/hw4.html)
+This is the repository for CSC510 - Software Engineering's Homeworks.)

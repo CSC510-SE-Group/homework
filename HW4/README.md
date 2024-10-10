@@ -1,4 +1,4 @@
-<h1 align="center">CSC510 - Homework1</h1>
+<h1 align="center">CSC510 - Homework4</h1>
 
 <p align="center">
 <a><img src="https://github.com/CSC510-SE-Group/homework-1/actions/workflows/tests-hw1.yml/badge.svg" alt="Tests Status Badge"></a>
@@ -10,4 +10,4 @@
 </a>
 </p>
 
-This is the repository for CSC510 - Software Engineering's Homeworks. More details [here](https://txt.github.io/se24fall/hw1.html)
+This is the repository for CSC510 - Software Engineering's Homeworks. More details [here](https://txt.github.io/se24fall/hw4.html)
